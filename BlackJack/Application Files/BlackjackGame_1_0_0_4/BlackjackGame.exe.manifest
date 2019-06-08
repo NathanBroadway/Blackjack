@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="BlackjackGame.exe" version="1.0.0.4" publicKeyToken="2feed1742b7f08f0" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="BlackjackGame" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="BlackjackGame.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Blackjack.dll" size="4608">
+      <assemblyIdentity name="Blackjack" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Sv8FcL3J0e0JRWSvOR3TN2pdiwiHD5+JpMw1dXjVc5M=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BlackjackGame.exe" size="27624">
+      <assemblyIdentity name="BlackjackGame" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>k6NsQ8ea6Xa99n5c2Kx7KVuOjjXoCTqz4eKWf7IkQd4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="BlackjackGame.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=NATHANBROADWAY\student" issuerKeyHash="b644492aba6433128bea083ab4f0686fe432fd9c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>4McZu4n9Utw64uHh4rQkI0lWpmYuyW4n3Rrkut7OusQ=</DigestValue></Reference></SignedInfo><SignatureValue>4li+XtrJhrrrL3tLNR2Nn4nqXc2VbR1qV7t7Wz3Fit4A78S1G1Lrzxd1yaIi1zymu/SRP0I0YiNmUxYb3nsxosyeWPWb64vnyoB5Oh7bA8uznpUlO3FPn4gQo3bJRZyxlyxG9kEq7zwxpk8Td3wUdrRY/gVXnh94kSx4BCKOnAo=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>9LNV6GiqUMHL9//IMMAg3szZIMKZOxUfmLGY1ump4zijH8bBWoj8nA0h+0HPLpvla2Om3pcJPrj3iuu5G8SfXqCGfRaSEUGM2kbEgSj8hw+a8Zvhd+z+G94D/b171Yoegqb0AyL326JEJBChC/SPboZnilufvJQYdCrLHfxxGvE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c4bacedebae41add276ec92e66a656492324b4e2e1e1e23adc52fd89bb19c7e0" Description="" Url=""><as:assemblyIdentity name="BlackjackGame.exe" version="1.0.0.4" publicKeyToken="2feed1742b7f08f0" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=NATHANBROADWAY\student</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>tkcInNMRM9Bqoh24FzzcUGDNpGAwRUlIlQvJc6NGSCc=</DigestValue></Reference></SignedInfo><SignatureValue>S0TF0pgMd2pDmQpP+F+DOuW9vr7Q5g3N4ufdYDMvtjtEN29+gEqtM4JuQnnMretg4G3AsdZWN+U4b6jdKu4dNVgLGIMQTd/t92M217Sp9+A24lm00SnUG0R/B0CDEEjVlIfk8MPwdxUsEq00MU3UJArBK4Lt0sICwAFhonBN4o8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>9LNV6GiqUMHL9//IMMAg3szZIMKZOxUfmLGY1ump4zijH8bBWoj8nA0h+0HPLpvla2Om3pcJPrj3iuu5G8SfXqCGfRaSEUGM2kbEgSj8hw+a8Zvhd+z+G94D/b171Yoegqb0AyL326JEJBChC/SPboZnilufvJQYdCrLHfxxGvE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQXWgnCI7hPYBGz7YVYmSfSDANBgkqhkiG9w0BAQsFADA3MTUwMwYDVQQDHiwATgBBAFQASABBAE4AQgBSAE8AQQBEAFcAQQBZAFwAcwB0AHUAZABlAG4AdDAeFw0xOTA2MDYxMzQ0MDhaFw0yMDA2MDUxOTQ0MDhaMDcxNTAzBgNVBAMeLABOAEEAVABIAEEATgBCAFIATwBBAEQAVwBBAFkAXABzAHQAdQBkAGUAbgB0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQD0s1XoaKpQwcv3/8gwwCDezNkgwpk7FR+YsZjW6anjOKMfxsFaiPycDSH7Qc8um+VrY6belwk+uPeK67kbxJ9eoIZ9FpIRQYzaRsSBKPyHD5rxm+F37P4b3gP9vXvVih6CpvQDIvfbokQkEKEL9I9uhmeKW5+8lBh0Kssd/HEa8QIDAQABMA0GCSqGSIb3DQEBCwUAA4GBACKgO4KgK6An1A7i7n187qEbzIxMCKwlYljy+gPrVepDDipnKcxkNOKKbaYrK7FnNlqa1v+kZnJ/QCWqbB8gLsPQhJHHMpTG0JVYgJEBzX8h3bQsuz/Ym9WkO/0fDI8CUd0m63YLKVSsW3a7apzOPccmlS7covWxMMXkCgrUiMQ3</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
